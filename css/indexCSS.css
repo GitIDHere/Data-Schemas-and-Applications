@@ -1,0 +1,72 @@
+div#left_content{
+	width:660px;
+	float:left;
+}
+
+
+/* Top five artist start here */
+
+article.top5{
+	margin-bottom: 10px;
+	border: 2px solid #000000;
+}
+
+article.top5  > h3{
+	margin-bottom:5px;
+	padding:10px 0px 7px 10px;
+	background:#333333;
+	color:#ffffff;
+	font: bold 23px Calibri;
+	border-bottom:3px solid #aa2343;
+}
+
+p.album_name{
+	width:105px;
+	font:Bold 18px Calibri;
+	text-align:center;
+	color:#333333;
+}
+
+div.artist_container{
+	padding:10px;
+	display:inline-block;
+}
+
+p.rank_number{
+	background:#333333;
+	color:#ffffff;
+	font: 17px Arial;
+	text-align:center;
+	border:2px solid #000;
+}
+
+a.link{
+	text-decoration:none;
+}
+
+p.fav_count{
+	color:#333333;
+	font: bold 17px Calibri;
+	text-align:center;
+}
+
+img.artist_image{
+	margin:0px auto;
+	width:105px;
+	height:auto;
+}
+
+p.artist_name{
+	width:105px;
+	font:Bold 18px Calibri;
+	text-align:center;
+	color:#333333;
+}
+
+/* The css for thr twitter feed */
+
+div#right_content{
+	width:290px;
+	height:auto;
+	float:right;
+}

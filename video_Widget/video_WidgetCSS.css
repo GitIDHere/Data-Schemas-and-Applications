@@ -1,0 +1,147 @@
+/*
+	Widget: Recent Videos From YouTube, and DailyMotion APIs.
+	Student Number: 11020070
+*/
+
+/* I made the design of my widget consistent with the main application by applying the same colours and keeping to the same style. */
+
+section#rapVideo_container{
+	width: 295px;
+	height: auto;
+	margin:10px 0px;
+	display:inline-block;
+	vertical-align:top;
+	background: #ffffff;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	float:right;
+}
+
+section#rapVideo_container:after{
+	clear:both;
+	display:block;
+	content:"":
+}
+
+h4#widget_title{
+	padding:10px 0px;
+	margin-bottom:10px;
+	background:#333333;
+	text-align: center;
+	color:#ffffff;
+	font: bold 20px Tahoma;
+}
+
+
+/* Styles for the tab button on the top of the widget. */
+
+ul#button_container{
+	width: 100%;
+	height: 58px;
+	list-style: none;
+}
+
+li.buttons{
+	margin: 20px 0px 0px 0px;
+	display: inline-block;
+}
+
+/* Selects the first li.button element within ul#button_container. */
+ul#button_container > li.buttons:first-child{
+	margin: 20px 5px 0px 45px;
+}
+
+/* The style for he top two button on the widget. */
+li.buttons > a{
+	padding: 15px 10px;
+	background: #ffffff;
+	color: #000000;
+	text-decoration: none;
+	font: bold 15px Tahoma;
+	border: 1px solid #000000;
+	box-shadow: 0px 0px 3px inset;
+	-webkit-box-shadow: 0px 0px 3px #000000 inset;
+	-moz-box-shadow: 0px 0px 3px inset;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+li.buttons > a:hover{
+	box-shadow: 0px 0px 7px #000000 inset;
+	color:#aa3243;
+}
+
+p.container_title{
+	width: 240px;
+	margin: 10px 0px;
+	padding: 5px 0px 5px 5px;
+	background: #CCCCCC;
+	color: #000000;
+	font: bold 18px Arial;
+	border-radius: 0px 10px 10px 0px;
+	-moz-border-radius: 0xp 10px 10px 0px;
+	-webkit-border-radius: 0xp 10px 10px 0px;
+}
+
+
+/* This is the style of the videos that appear. */
+
+/* I made the height auto to resolve the problem of the title of the video colapsing down because some titles are all capitalised. */
+div.video_container{
+	width: 265px;
+	height: auto;
+	margin-bottom: 10px;
+	padding: 15px;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	-moz-box-shadow: 0px 0px 5px #000000 inset;
+	-webkit-box-shadow: 0px 0px 5px #000000 inset;
+	box-shadow: 0px 0px 5px #000000 inset;
+}
+
+div.video_container:hover{
+	-moz-box-shadow: 0px 0px 10px #000000 inset;
+	-webkit-box-shadow: 0px 0px 10px #000000 inset;
+	box-shadow: 0px 0px 10px #000000 inset;
+	-webkit-transition: box-shadow .5s;
+	-moz-transition: box-shadow .5s;
+	transition: box-shadow .5s;
+}
+
+/* The thumbnail of the video. */
+img.thumbnail{
+	width: 80px;
+	height: 60px;
+	float: left;
+}
+
+a.video_title{
+	width: 170px;
+	padding: 0px 0px 5px 5px;
+	font: bold 18px Calibri;
+	float: right;
+}
+
+.text{
+	width: 170px;
+	font: 15px "Calibri" sans-serif;
+	float: right;
+}
+
+/* This style is used to remove the bottom border on the last video. The last-child css pseudo selctor is not supported by IE. */
+div.list-container > .video_container:last-child{
+	margin-bottom:0px;
+	border-bottom: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+div.video_container:after{
+	display: block;
+	content: "";
+	clear: both;
+}

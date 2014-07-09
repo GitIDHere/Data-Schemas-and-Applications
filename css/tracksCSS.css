@@ -1,0 +1,171 @@
+h1#page_title{
+	font: bold 40px Arial;
+	display:inline-block;
+	margin:0px 10px 0px 10px;
+}
+
+p#information{
+	padding:10px;
+	margin-bottom:20px;
+	border-bottom: 3px solid #5E5D5D;
+	font: 18px Calibri;
+}
+
+
+p#information > span{
+	color:#9E3515;
+	font: bold 20px Arial;
+}
+
+
+/* Album Profile CSS start */
+
+section#album_profile{
+	height:auto;
+	margin-left:20px;
+	padding-bottom:20px;
+	border-bottom: 5px solid #000000;
+}
+
+section#album_profile:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+img#album_image{
+	width:200px;
+	height:auto;
+	margin-right:20px;
+	float:left;
+}
+
+h2#album_name{
+	font: bold 30px Tahoma;
+}
+
+p.album_info{
+	font: 18px Arial;
+	margin:5px 0px;
+}
+
+p#sort_track_button{
+	margin-top:40px;
+	padding:20px 25px;
+	display:inline-block;
+	color:#000000;
+	font:bold 20px Calibri;
+	text-decoration:none;
+	text-align:center;
+	border: 1px solid #000000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 0px 0px 5px #000000 inset;
+}
+
+p#sort_track_button:hover{
+	color:#aa3243;
+	box-shadow: 0px 0px 10px #000000 inset;
+}
+
+p.fav_button{
+	padding:20px 25px;
+	display:block;
+	color:#000000;
+	font:bold 20px Calibri;
+	text-decoration:none;
+	text-align:center;
+	border: 1px solid #000000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 0px 0px 5px #000000 inset;
+}
+
+p.fav_button:hover{
+	color:#aa3243;
+}
+
+
+/* The following CSS is for the lsit of tracks. */
+
+section#track_list{
+	margin:20px 10px 10px 10px;
+	height:auto;
+	padding-left:30px;
+}
+
+div.track_container{
+	width:250px;
+	padding:10px;
+	margin:10px;
+	display:inline-block;
+	border:1px solid #000000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 0px 0px 0px #000 inset;
+}
+
+div.track_container:hover{
+	box-shadow: 0px 0px 5px #000000 inset;
+	-moz-transition: box-shadow .2s;
+	-webkit-transition: box-shadow, .2s;
+	transition: box-shadow, .2s;
+}
+
+p.track_name{
+	display:block;
+	color:#333333;
+	text-align:center;
+	font:bold 21px Arial;
+}
+
+p.fav_count{
+	margin:5px 0px;
+	text-align:center;
+	font:bold 20px  Calibri;
+}
+
+span.favs{
+	color:#aa3243;
+}
+
+audio.audio_player{
+	width:240px;
+	margin:7px 0px 7px 5px;
+}
+
+
+/* The following CSS is for the buttons to move through the track listings. */
+
+div#page_select_container{
+	margin-top:15px;
+	padding:20px;
+	border-top: 3px solid #5E5D5D;
+	border-bottom: 3px solid #5E5D5D;
+	text-align:center;
+}
+
+a.page_select{
+	padding:10px;
+	font: bold 20px Calibri;
+	border:2px solid #000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	text-decoration:none;
+	color:#333333;
+	box-shadow: 0px 0px 0px #000 inset;
+}
+
+a.page_select:hover{
+	color:#aa3243;
+	box-shadow: 0px 0px 5px #000 inset;
+}
+
+/* Only apply the folowing style to the first anchor child with the class of page_select of the div#page_select_container. */
+div#page_select_container > a.page_select:first-child{
+	margin-right:50px;
+}

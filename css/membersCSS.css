@@ -1,0 +1,170 @@
+h1#page_title{
+	font: bold 40px Arial;
+	display:inline-block;
+	margin:0px 10px 0px 10px;
+}
+
+section#member_profile{
+	width:950px;
+	margin-top:20px;
+	padding-bottom:15px;
+	border-bottom:5px solid #000000;
+}
+
+section#member_profile:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+img#member_image{
+	width:200px;
+	height:auto;
+	margin:0px 30px;
+	float:left;
+}
+
+h2#member_name{
+	font: bold 30px Tahoma;
+}
+
+p.total_favs{
+	font: 18px Arial;
+	margin:5px 0px;
+}
+
+/* Styles for the favorite track, and favorite artist buttons */
+
+div#buttons_container{
+	display:inline-block;
+	background:#aaa;
+}
+
+div#buttons_container:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+a.tab_button{
+	margin:60px 20px 0px 0px;
+	padding:10px 25px;
+	display:inline-block;
+	color:#000000;
+	font:bold 20px Calibri;
+	text-decoration:none;
+	text-align:center;
+	border: 1px solid #000000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 0px 0px 5px #000000 inset;
+}
+
+
+/* These are the styles for the displayed artist and tracks containers. */
+
+section#favorite_artist, section#favorite_track{
+	margin-left:20px;
+}
+
+/* Selects the H3 element contained within section#favorite_artist and section#favorite_track element. */
+section#favorite_artist > h3, section#favorite_track > h3{
+	width:950px;
+	margin:20px 0px 10px -20px;
+	padding:5px 0px;
+	background:#333333;
+	text-align:center;
+	color:#ffffff;
+	font:bold 30px Arial;
+}
+
+div.artist_container{
+	width:200px;
+	padding:10px 0px;
+	margin:10px;
+	display:inline-block;
+	border:1px solid #000000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 0px 0px 0px #000 inset;
+}
+
+div.artist_container:hover{
+	box-shadow: 0px 0px 7px #000000 inset;
+	-moz-transition: box-shadow .2s;
+	-webkit-transition: box-shadow, .2s;
+	transition: box-shadow, .2s;
+}
+
+img.artist_image{
+	width:150px;
+	height:auto;
+	margin:0px auto;
+	display:block;
+}
+
+p.artist_name{
+	margin-top:5px;
+	display:block;
+	text-align:center;
+	color:#333333;
+	font:bold 20px Arial;
+}
+
+p.artist_name:hover{
+	color:#aa3243;
+}
+
+/* The CSS for the tracks displayed*/
+
+/* The div which contains the list of tracks */
+div#track{
+	margin-left:70px;
+}
+
+/* The container which will hold the information of individual tracks. */
+div.track_container{
+	width:230px;
+	padding:10px;
+	margin:10px;
+	display:inline-block;
+	border:1px solid #000000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 0px 0px 0px #000 inset;
+}
+
+div.track_container:hover{
+	box-shadow: 0px 0px 7px #000000 inset;
+	-moz-transition: box-shadow .2s;
+	-webkit-transition: box-shadow, .2s;
+	transition: box-shadow, .2s;
+}
+
+img.album_cover{
+	width:150px;
+	height:auto;
+	margin:0px auto;
+	display:block;
+}
+
+p.track_name{
+	margin-top:5px;
+	display:block;
+	text-align:center;
+	color:#333333;
+	font:bold 18px Arial;
+}
+
+p.track_name:hover{
+	color:#aa3243;
+}
+
+audio.audio_player{
+	width:220px;
+	margin:10px auto;
+	display:block;
+}

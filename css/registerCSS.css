@@ -1,0 +1,113 @@
+section#note_container{
+	width:400px;
+	margin:25px 0px 0px 60px;
+	float:left;
+}
+
+section#note_container:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+
+h2#note_heading{
+	padding:10px;
+	color:#ffffff;
+	font:bold 22px Arial;
+	background:#333333;
+	border-bottom: 5px solid #aa2343;
+	-moz-border-radius:5px 5px 0px 0px;
+	-webkit-border-radius:5px 5px 0px 0px;
+	border-radius:5px 5px 0px 0px;
+}
+
+ul#note_list{
+	padding:15px 10px;
+	background:#E3E3E3;
+	font:20px Calibri;
+	border:1px solid #000000;
+	border-top:none;
+	-moz-border-radius:0px 0px 5px 5px;
+	-webkit-border-radius:0px 0px 5px 5px;
+	border-radius:0px 0px 5px 5px;
+}
+
+
+/* CSS for the registration box sttarts here */
+
+section#register_container{
+	width:400px;
+	margin:20px 60px 0px 0px;
+	border: 1px solid #000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	float:right;
+}
+
+section#register_container:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+
+h1#register_title{
+	padding:10px 10px;
+	background:#333333;
+	color:#ffffff;
+	font:bold 25px Arial;
+	border-bottom: 5px solid #aa2343;
+}
+
+/* The CSS for the registration form STARTS. */
+
+form#registration_form{
+	padding:10px 20px;
+	-moz-border-radius:0px 0px 5px 5px;
+	-webkit-border-radius:0px 0px 5px 5px;
+	border-radius:0px 0px 5px 5px;
+}
+
+span.label{
+	font:21px Calibri;
+	margin-right:40px;
+}
+
+span#username{
+	margin-right:110px;
+}
+
+span#password{
+	margin-right:115px;
+}
+
+input.input{
+	margin-bottom:10px;
+	padding:5px 0px;
+}
+
+/* We completely redesigned the button element to match the design of our application. */
+button#submit{
+	margin:10px auto;
+	padding:10px 30px;
+	display:block;
+	background:#fff;
+	color:#000000;
+	font:bold 17px Calibri;
+	border:1px solid #000000;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	box-shadow:0px 0px 2px #000000 inset;
+}
+
+button#submit:hover{
+	color:#aa3243;
+	box-shadow:0px 0px 5px #000000 inset;
+}
+
+button#submit:active{
+	box-shadow:0px 0px 10px #000000 inset;
+}
+
+/* The CSS for the registration form END. */

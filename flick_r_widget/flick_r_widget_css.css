@@ -1,0 +1,44 @@
+/* 
+	Student Number: 11013888
+*/
+
+article#flickr_widget{
+	width:285px;
+	height:auto;
+	display:block;
+	background:#efefef;
+	margin-top:30px;
+	border: 2px solid #333333;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	float:right;
+}
+
+img.flick_r_img{
+	width:115px;
+	height:85px;
+	margin:5px;
+	border:2px solid #333333;
+}
+
+article#flickr_widget:after{
+	clear:both;
+	display:block;
+	content:"":
+}
+
+article#flickr_widget > h3{
+	margin-bottom:5px;
+	padding:10px 0px 7px 10px;
+	background:#333333;
+	color:#ffffff;
+	font: bold 23px Calibri;
+	border-bottom:3px solid #aa2343;
+}
+
+div#flick_r_image_list{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}

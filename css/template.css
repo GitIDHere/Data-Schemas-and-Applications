@@ -1,0 +1,307 @@
+/*
+	A template is creatred so that we do not have to repeat the CSS styles for the elements which do not change on all of 
+	the pages such as the top navigation bar, footer and background. 
+*/
+
+body{
+	background:#e5e5e5;
+	background:url('../images/bg.png');
+}
+
+.hover{
+	text-decoration:none;
+	color:#333333;
+}
+
+.hover:hover{
+	text-decoration:underline;
+	color:#aa3243;
+}
+
+/* The CSS for the warning message which appears based on certain circumstances. */
+div#warning_container{
+	width:100%;
+	height:37px;
+	margin-top:20px;
+	padding-top:5px;
+	background:#EBEBEB;
+	box-shadow:0px 0px 5px inset;
+	text-align:center;
+	color:#000;
+	border:1px solid #000000;
+	font: bold 23px Arial;
+}
+
+.wrapper{
+	min-width:1000px;
+	max-width:1000px;
+	height:auto;
+	margin:0px auto;
+}
+
+img#banner{
+	width:1000px;
+	height:190px;
+	margin-top:10px;
+}
+
+
+/* Top main navigation CSS starts */
+nav{
+	border-bottom: 7px solid #424242;
+	padding-bottom:17px;
+}
+
+nav ul {
+	text-align:center;
+	list-style: none;
+}
+
+nav ul li{
+	margin-right:10px;
+	display:inline-block;
+	position:relative;
+}
+
+nav ul li a {
+	padding:15px 40px;
+	margin:10px 10px 0px 0px;
+	display:inline-block;
+	background: #fff;
+	border-radius:5px;
+	border: 1px solid #000000;
+	text-decoration: none;
+	color: #000000;
+	font: bold 14px Tahoma;
+	letter-spacing:1px;
+	text-transform: uppercase;
+ }
+ 
+nav ul li a:hover {
+	color:#aa2343;
+	-moz-box-shadow: 0px 0px 5px #000000 inset; 
+	-webkit-box-shadow: 0px 0px 5px #000000 inset; 
+	box-shadow: 0px 0px 5px #000000 inset; 
+	-moz-transition: box-shadow .5s, color .5s;
+	-webkit-transition: box-shadow, color, .5s;
+	transition: box-shadow, color, .5s;
+}
+
+nav ul li a:active{
+	-moz-box-shadow: 0px 0px 10px #000000 inset; 
+	-webkit-box-shadow: 0px 0px 10px #000000 inset; 
+	box-shadow: 0px 0px 10px #000000 inset; 
+}
+
+/* The styles for the RSS container in the top navigation bar. */
+div#rss_container{
+	width:60px;
+	height:1px;
+	display:inline-table;
+	font: 700 13px Tahoma;
+	position:absolute;
+	bottom:-30px;
+	left:0px;
+}
+
+div#rss_container > a{
+	width:60px;
+	height: 60px;
+	margin:0px;
+	padding:0px;
+	position:relative;
+}
+
+img#rss_img{
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:5px;
+	left:5px;
+}
+
+/* This is the CSS for the lines on the left and right side of the artist, album, and tracks page title. */ 
+div.lines{
+	width:390px;
+	height:5px;
+	margin-bottom:10px;
+	background:#000;
+	display:inline-block;
+}
+
+ 
+/* The css to create the arrow which appears when hovering over the top navigation buttons */
+
+.arrow {
+	position: relative;
+	display:none;
+	opacity:0;
+	z-index:-1;
+}
+
+.arrow:after, .arrow:before {
+	height: 0;
+	width: 0;
+	bottom: 100%;
+	content: " ";
+	border: solid transparent;
+	position: absolute;
+	bottom:-17px;
+}
+
+.arrow:after {
+	margin-left: -30px;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #eee;
+	border-width: 15px;
+	left: 50%;
+}
+
+.arrow:before {
+	margin-left:-34px;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #424242;
+	border-width: 19px;
+	left: 50%;
+}
+
+nav ul li:hover > .arrow{
+	display:block;
+	opacity:1;
+	visibility:visible;
+	-moz-transition: display .2s;
+	-webkit-transition: display, .2s;
+	transition: display, .2s;
+}
+ 
+ /* Arrow CSS END. */
+
+
+/*Bread crumb CSS START*/
+
+div#bread_crumbs{
+	margin: 15px 30px;
+	font:bold 18px  Tahoma; 
+	letter-spacing: 1px;
+}
+
+div#bread_crumbs > a {
+	color:#aa2343;
+}  
+
+/* Selects the Span element that is placed after an anchor element, both of which are the child of a div element with the ID of #bread_crumbs. */
+div#bread_crumbs > a + span{
+	color:#5b5b5b;
+}  
+/*Bread crumb CSS END*/
+
+
+/*Set style for the main webpage section. */
+div#main_content{
+	margin:10px 0px;
+	padding:20px;
+	height:auto;
+	background:#ffffff;
+	box-shadow: 0px 3px 5px #000;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+/*Clears all the floats placed within main_content. */
+div#main_content:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+
+/* Footer CSS starts here */
+
+body > footer{
+	min-width: 660px;
+	max-width: 100%;
+	height: auto;
+	padding:20px 20px 10px 20px;
+	margin-bottom: 20px;
+	background: #ffffff;
+	position: relative;
+	border-top: 1px dashed #707070;
+	border-bottom: 1px dashed #707070;
+}
+
+
+/* About Us article CSS */
+
+article#about_us{
+	width:400px;
+	margin:0px 0px 10px 20px;
+	display:inline-block;
+}
+
+h5.footer_titles{
+	margin-bottom:5px;
+	padding-bottom:5px;
+	color:#A6A4A4;
+	font: bold 22px Calibri;
+	border-bottom:2px solid #000000;
+}
+
+p.description{
+	font: 15px Calibri;
+}
+
+
+/* Footer links article CSS */
+
+article#footer_nav{
+	width:200px;
+	display:inline-block;
+	margin-left:40px;
+	vertical-align:top;
+}
+
+
+a.footer_links{
+	margin:5px;
+	color:#5C5C5C;
+	font: bold 18px Calibri;
+	text-decoration:none;
+}
+
+/* This CSS style selects the second and fifth anchor child of the footer_nav to place stylings on only these elements.
+	However, nth-child only works for Chrome and does not work for IE 9 or earlier. */
+article#footer_nav > a.footer_links:nth-child(2), article#footer_nav > a.footer_links:nth-child(5){
+	margin-left:0px;
+}
+
+
+a.footer_links:hover{
+	text-decoration:underline;
+}
+
+/* Copyright article CSS */
+
+article#copyright{
+	width:220px;
+	display:inline-block;
+	margin-left:40px;
+	vertical-align:top;
+}
+
+article#copyright > p{
+	display:inline-block;
+	font: 17px Calibri;
+	margin-right:5px;
+	padding-right:5px;
+}
+
+article#copyright > p:nth-child(2), article#copyright > p:nth-child(4){	
+	border-right: 1px solid #000;
+}
+
+article#copyright > p:nth-child(5){
+	padding:0px;
+}
+
+/* Footer CSS ENDS */

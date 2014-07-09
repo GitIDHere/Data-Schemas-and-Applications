@@ -1,0 +1,112 @@
+h1#page_title{
+	font: bold 40px Arial;
+	display:inline-block;
+	margin:0px 10px 0px 10px;
+}
+
+p#information{
+	padding:10px;
+	margin-bottom:20px;
+	border-bottom: 3px solid #5E5D5D;
+	font: 18px Calibri;
+}
+
+
+/* The styles for the list of artists. */
+
+section#artist_list{
+	width:660px;
+	height:auto;
+	margin-bottom:10px;
+	display:block;
+	float:left;
+}
+
+section#artist_list:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+
+div.artist_container{
+	width:200px;
+	padding:10px 0px;
+	margin:5px;
+	display:inline-block;
+	border:1px solid #000000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 0px 0px 0px #000 inset;
+}
+
+div.artist_container:hover{
+	box-shadow: 0px 0px 10px #000000 inset;
+	-moz-transition: box-shadow .2s;
+	-webkit-transition: box-shadow, .2s;
+	transition: box-shadow, .2s;
+}
+
+img.artist_image{
+	width:150px;
+	max-height:190px;
+	display:block;
+	margin:0px auto;
+}
+
+a.artist_name{
+	margin-top:5px;
+	display:block;
+	color:#333333;
+	text-align:center;
+	font:bold 20px Calibri;
+}
+
+a.album_number{
+	display:block;
+	color:#333333;
+	text-align:center;
+	font:17px Calibri;
+}
+
+a.times_faved{
+	display:block;
+	color:#333333;
+	text-align:center;
+	font:17px Calibri;
+}
+
+
+/* The CSS for the next and previous button. */
+
+div#page_select_container{
+	margin-top:15px;
+	padding:20px;
+	border-top: 3px solid #5E5D5D;
+	border-bottom: 3px solid #5E5D5D;
+	text-align:center;
+	display:block;
+	clear:both;
+}
+
+a.page_select{
+	padding:10px;
+	font: bold 20px Calibri;
+	border:2px solid #000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	text-decoration:none;
+	color:#333333;
+	box-shadow: 0px 0px 0px #000 inset;
+}
+
+a.page_select:hover{
+	color:#aa3243;
+	box-shadow: 0px 0px 5px #000 inset;
+}
+
+/* Only apply the folowing style to the first anchor child with the class of page_select of the div#page_select_container. */
+div#page_select_container > a.page_select:first-child{
+	margin-right:50px;
+}
